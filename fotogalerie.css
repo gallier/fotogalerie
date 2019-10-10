@@ -1,0 +1,31 @@
+#container {
+    width: 760px;
+    margin: 10px auto;
+    border: 1px solid #999;
+}
+#fotobalk img {
+    margin: 0 4px;
+}
+#fotobalk img:first-child {
+    margin-left: 8px;
+}
+#foto img {
+    width: 320px;
+    margin: 10px 220px;
+}
+#foto {
+    display: none;
+}
+h2 {
+	text-align: center;
+}
+#version {
+	text-align: center;
+	font-size: 10px;
+	color: #666;
+}
+#bijschrift {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic";
+}

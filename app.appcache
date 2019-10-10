@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# v0.1.h - 10-08-2015
+# manifest-file for offline caching
+#CACHE
+
+# index.html
+
+fotogalerie.css
+fotogalerie.js
+
+fotos_venetie/thumb_venetie_0.jpg
+fotos_venetie/thumb_venetie_1.jpg
+fotos_venetie/thumb_venetie_2.jpg
+fotos_venetie/thumb_venetie_3.jpg
+fotos_venetie/thumb_venetie_4.jpg
+fotos_venetie/thumb_venetie_5.jpg
+fotos_venetie/thumb_venetie_6.jpg
+fotos_venetie/venetie_0.jpg
+fotos_venetie/venetie_1.jpg
+fotos_venetie/venetie_2.jpg
+fotos_venetie/venetie_3.jpg
+fotos_venetie/venetie_4.jpg
+fotos_venetie/venetie_5.jpg
+fotos_venetie/venetie_6.jpg
