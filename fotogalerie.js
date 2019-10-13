@@ -1,20 +1,30 @@
 $(() => {
-
-    var version = 'v0.2 - 11-10-2019';
+    // + + + + + version + + + + + 
+    var version = 'v0.2.c - 13-10-2019';
 
     var versionObj = document.getElementById("version");
     versionObj.innerHTML = "&copy; Rob vander Gali&euml;n - " + version;
 
-    var images = [];
-    const imgElements = $('.thumb'),
+    // + + + + + init images + + + + + 
+    const images = [],
+        imgElements = $('.thumb'),
         numOfImages = imgElements.length;
 
-    for (var i = 0; i < numOfImages; i++) {
-        images.push(imgElements.attr('src'));
+    // + + + + + get all urls from images + + + + +
+    function getFileNames(element, index, array) {
+        const src = element.getAttribute('src'),
+            subStart = src.indexOf('_'),
+            fileName = src.substr(subStart + 1);
+        images.push(fileName);
     }
+    imgElements.forEach(getFileNames);
 
 
+    // + + + + + + + + + + EVENTS + + + + + + + + + + 
     $('#fotobalk img').on('click', function(evt) {
+        /*
+            get onclick-event from #fotobalk img
+        */
         const thumbUrl = $('#fotobalk img').attr('src'),
             subStart = thumbUrl.indexOf('_'),
             imageUrl = thumbUrl.substr(subStart + 1);
@@ -41,10 +51,10 @@ $(() => {
         }
     }
 
-    console.log('miq ready', imgElements, images, numOfImages);
+    console.log('miq ready', imgElements, typeof imgElements, images, numOfImages);
 });
 
 
 
 
-// TODO: dynamische html-list met foto's
+// TODO: dynamische html-list met foto's1
