@@ -16,4 +16,9 @@ fotogalerie.js
   TODO: onclick-0event verplaatsen naar het Javascript bestand
   
  setup 08-03-20125
+
+
+Aanpassingen
+- migq
  last update 11-10-2019
+

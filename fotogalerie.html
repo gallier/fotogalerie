@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html manifest="app.appcache">
 <!--html-->
+
 <head>
     <title>Fotogalerie</title>
-    
+
     <link href="fotogalerie.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="miq-min.js"></script>
 
 </head>
+
 <body>
     <div id="container">
         <h2>Fotogalerie</h2>
-        <div id="fotobalk"><!-- balk met thumbnails -->
-            <img src="fotos_venetie/thumb_venetie_0.jpg" width="96" height="72" alt="Venetie" onclick="showFoto(0,true);" />
-            <img src="fotos_venetie/thumb_venetie_1.jpg" width="96" height="72" alt="Venetie" onclick="showFoto(1,true);" />
-            <img src="fotos_venetie/thumb_venetie_2.jpg" width="96" height="72" alt="Venetie" onclick="showFoto(2,true);" />
-            <img src="fotos_venetie/thumb_venetie_3.jpg" width="96" height="72" alt="Venetie" onclick="showFoto(3,true);" />
-            <img src="fotos_venetie/thumb_venetie_4.jpg" width="96" height="72" alt="Venetie" onclick="showFoto(4,true);" />
-            <img src="fotos_venetie/thumb_venetie_5.jpg" width="96" height="72" alt="Venetie" onclick="showFoto(5,true);" />
-            <img src="fotos_venetie/thumb_venetie_6.jpg" width="96" height="72" alt="Venetie" onclick="showFoto(6,true);" />
+        <div id="fotobalk">
+            <!-- balk met thumbnails -->
+            <img src="fotos/thumb_venetie_0.jpg" width="96" height="72" alt="Venetie" class="thumb" />
+            <img src="fotos/thumb_venetie_1.jpg" width="96" height="72" alt="Venetie" class="thumb" />
+            <img src="fotos/thumb_venetie_2.jpg" width="96" height="72" alt="Venetie" class="thumb" />
+            <img src="fotos/thumb_venetie_3.jpg" width="96" height="72" alt="Venetie" class="thumb" />
+            <img src="fotos/thumb_venetie_4.jpg" width="96" height="72" alt="Venetie" class="thumb" />
+            <img src="fotos/thumb_venetie_5.jpg" width="96" height="72" alt="Venetie" class="thumb" />
+            <img src="fotos/thumb_venetie_6.jpg" width="96" height="72" alt="Venetie" class="thumb" />
         </div>
-        <div id="foto"><!-- vergrote foto -->
-            <img src="fotos_venetie/venetie_0.jpg" name="foto_320x240" width="320" height="240" alt="Venetie" onclick="showFoto(0,false);" />
+        <div id="foto">
+            <!-- vergrote foto -->
+            <img src="fotos/venetie_0.jpg" name="foto_320x240" width="320" height="240" alt="Venetie" onclick="showFoto(0,false);" />
             <p id="bijschrift"></p>
         </div>
         <div id="version">&copy; Rob vander Gali&euml;n x</div>
@@ -28,4 +33,5 @@
 
     <script type="text/javascript" src="fotogalerie.js"></script>
 </body>
+
 </html>
